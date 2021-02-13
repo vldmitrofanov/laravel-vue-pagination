@@ -196,8 +196,7 @@ export default {
     }
   },
   mounted() {
-    this.getResults(this.maxResults)
-    // this.getResourceResults();
+    this.getResults()
   },
   methods: {
     async getResults(page) {
