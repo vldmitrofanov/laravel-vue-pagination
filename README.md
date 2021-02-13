@@ -3,6 +3,29 @@
 Fork from [gilbitron/laravel-vue-pagination](gilbitron/laravel-vue-pagination)
 A Vue.js pagination component for Laravel paginators that works with Bootstrap.
 
+## why bother forking?
+
+This fork intends to show (and document) how to work with query string. Please look at the App.vue.
+
+Example retrieving users:
+
+```javascript
+...
+methods: {
+    async getResults(page) {
+      if (!page) {
+        page = 1
+      }
+      const url = `${this.url}/api/users`
+      const response = await axios.get(
+        `${url}?page=${page}&${this.queryString}`
+      )
+
+      this.laravelData = response.data.users
+    }
+	...
+```
+
 ## Requirements
 
 - [Vue.js](https://vuejs.org/) 2.x
@@ -19,7 +42,7 @@ yarn add laravel-vue-pagination
 
 ## Demo
 
-See [https://laravel-vue-pagination.now.sh](https://laravel-vue-pagination.now.sh/)
+See [https://laravel-vue-pagination-vldmitrofanov.netlify.app/](https://laravel-vue-pagination-vldmitrofanov.netlify.app//)
 
 ## Usage
 

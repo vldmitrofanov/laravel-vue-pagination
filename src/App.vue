@@ -199,7 +199,6 @@ export default {
     this.getResults(this.maxResults)
     // this.getResourceResults();
   },
-
   methods: {
     async getResults(page) {
       if (!page) {
@@ -213,7 +212,6 @@ export default {
       this.laravelData = response.data.users
     }
   },
-
   watch: {
     limit(newVal) {
       this.limit = parseInt(newVal)
@@ -222,7 +220,6 @@ export default {
       }
     }
   },
-
   components: {
     pagination: LaravelVuePagination
   }

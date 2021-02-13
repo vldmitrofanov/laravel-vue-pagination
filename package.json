@@ -1,9 +1,9 @@
 {
   "name": "laravel-vue-pagination",
   "version": "2.3.1",
-  "description": "Vue.js pagination component for Laravel paginators and Bootstrap styles",
+  "description": "Vue.js pagination component for Laravel paginators and Bootstrap styles. Forked from gilbitron/laravel-vue-pagination",
   "author": "Gilbert Pellegrom <gilbert@pellegrom.me>",
-  "homepage": "https://github.com/gilbitron/laravel-vue-pagination",
+  "homepage": "https://github.com/vldmitrofanov/laravel-vue-pagination",
   "license": "MIT",
   "keywords": [
     "vue",
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/gilbitron/laravel-vue-pagination.git"
+    "url": "https://github.com/vldmitrofanov/laravel-vue-pagination.git"
   },
   "main": "dist/laravel-vue-pagination.common.js",
   "scripts": {
