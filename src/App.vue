@@ -76,26 +76,28 @@
       </div>
     </form>
     <div class="row">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Created</th>
-            <th>Updated</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="(user, i) in users" :key="i">
-            <td>{{ user.id }}</td>
-            <td>{{ user.name }}</td>
-            <td>{{ user.email }}</td>
-            <td>{{ user.created_at }}</td>
-            <td>{{ user.updated_at }}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="col-12">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Created</th>
+              <th>Updated</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(user, i) in users" :key="i">
+              <td>{{ user.id }}</td>
+              <td>{{ user.name }}</td>
+              <td>{{ user.email }}</td>
+              <td>{{ user.created_at }}</td>
+              <td>{{ user.updated_at }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
     <div class="row">
       <div class="col-12">
